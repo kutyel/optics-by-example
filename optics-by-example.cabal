@@ -1,0 +1,33 @@
+cabal-version:      2.4
+name:               optics-by-example
+version:            0.1.0.0
+synopsis:
+  Code for the exercises of Optics By Example solved on Twitch
+
+description:
+  Code for the exercises of Optics By Example solved on Twitch!
+
+bug-reports:        https://github.com/kutyel/optics-by-example/issues
+license:            MIT
+license-file:       LICENSE
+author:             Flavio Corpa
+maintainer:         flaviocorpa@gmail.com
+copyright:          Flavio Corpa © 2022
+category:           Education, Entertainment
+extra-source-files:
+  CHANGELOG.md
+  README.md
+
+executable optics-by-example
+  default-language: Haskell2010
+  hs-source-dirs:   app
+  main-is:          Main.hs
+  build-depends:
+    , aeson
+    , base          ^>=4.14.3.0
+    , containers
+    , generic-lens
+    , lens
+    , lens-aeson
+    , mtl
+    , text
